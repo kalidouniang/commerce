@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/gomy.png" alt="" width="125px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Accueil</a></li>
+               <li><a href="products.html">Produits</a></li>
+               <li><a href="">À propos</a></li>
+               <li><a href="">Contact</a></li>
+               <li><a href="account.html">Compte</a></li>
+            <!-- TODo: 22:20 -->
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" alt="" width="30px" height="30px"
+        /></a>
+        <img
+          src="images/menu.png"
+          alt=""
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+    
+
+    <!-- Cart Items Details -->
+    <div class = 'container'>
+      <div class = 'row'>
+          <div class = 'col-md-4 col-lg-4'>
+            <div class="card" style="width: 18rem;">
+                <img src="images/buy-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">T-shirt</h3>
+                  <h4 class="card-text">$100</h4>
+                  <a class="btn btn-primary">Ajouter au panier</a>
+                </div>
+              </div>
+          </div>
+
+          <div class = 'col-md-4 col-lg-4'>
+            <div class="card" style="width: 18rem;">
+                <img src="images/product-8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Montre</h3>
+                  <h4 class="card-text">$80</h4>
+                  <a  class="btn btn-primary">Ajouter au panier</a>
+                </div>
+              </div>
+          </div>
+
+          <div class = 'col-md-4 col-lg-4'>
+            <div class="card" style="width: 18rem;">
+                <img src="images/product-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">chaussures</h3>
+                  <h4 class="card-text">$50</h4>
+                  <a class="btn btn-primary">Ajouter au panier</a>
+                </div>
+              </div>
+          </div>
+
+        
+          <div class = 'col-md-4 col-lg-4'>
+            <div class="card" style="width: 18rem;">
+                <img src="images/product-5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">CHaussures</h3>
+                  <h4 class="card-text">$100</h4>
+                  <a class="btn btn-primary">Ajouter au panier</a>
+                </div>
+              </div>
+          </div>
+
+          <div class = 'col-md-4 col-lg-4'>
+            <div class="card" style="width: 18rem;">
+                <img src="images/product-6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">T Shirt</h3>
+                  <h4 class="card-text">$30</h4>
+                  <a class="btn btn-primary">Ajouter au panier</a>
+                </div>
+              </div>
+          </div>
+
+          <div class = 'col-md-4 col-lg-4'>
+            <div class="card" style="width: 18rem;">
+                <img src="images/product-12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Ensemble</h3>
+                  <h4 class="card-text">$100</h4>
+                  <a class="btn btn-primary">Ajouter au panier</a>
+                </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+  <div class="uk-overflow-auto container" style = 'width: 70%'>
+    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+        <thead>
+            <tr>
+                <th class="uk-table-shrink"></th>
+                <th class="uk-table-small sty"><h3>IMAGES</h3></th>
+                <th class="uk-table-small"></th>
+                <th class="uk-width-small sty"><h3>PRIX</h3></th>
+                <th class="uk-table-shrink uk-text-small sty"><h3>QUANTITE</h3></th>
+                <th class="uk-table-shrink uk-text-small sty"><h3>TOTAL</h3></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td><img class="uk-preserve-width uk-border-circle" src="images/buy-1.jpg" width="40" alt=""></td>
+                <td class="uk-table-link">
+                    <h3 class = "item-name">T-Shirt</h3>
+                </td>
+                <td class="uk-text-truncate item-price"><h3>$100</h3></td>
+                <td><input type = 'number' class = 'num' value = '1'></td>
+                <td class="uk-text-truncate total-price"><h3>$100</h3></td>
+                <td><button class="uk-button uk-button-danger" type="button">Supprimer</button></td>
+            </tr>
+      
+
+        </tbody>
+        <tr>
+          <td><input class="uk-checkbox" type="checkbox"></td>
+          <td><img class="uk-preserve-width uk-border-circle"  width="40" alt=""></td>
+          <td class="uk-table-link">
+              <h3 class = "item-name"><strong>Grand-Total</strong></h3>
+          </td>
+          <td class="uk-text-truncate"><h3></h3></td>
+          <td class="uk-text-truncate"><h3></h3></td>
+          <td class="uk-text-truncate grand-total"><h3><strong>$0</strong></h3></td>
+          
+      </tr>
+    </table>
+</div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Téléchargez notre application</h3>
+            <p>
+              Télécharger l'application pour Android <br />
+              et téléphone portable ios
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/gomy.png" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
+              Porro, eum?
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Liens utiles</h3>
+             <ul>
+               <li>Coupons</li>
+               <li>Article de blog</li>
+               <li>Politique de retour</li>
+               <li>Rejoindre l'affiliation</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Suivez-nous</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright Etudiant Gomycode 2023</p>
+      </div>
+    </div>
+    <script src = 'script.js'></script>
+    <!-- JS for Toggle menu -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+          var address = protocol + window.location.host + window.location.pathname + '/ws';
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == 'reload') window.location.reload();
+            else if (msg.data == 'refreshcss') refreshCSS();
+          };
+          if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+            console.log('Live reload enabled.');
+            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+          }
+        })();
+      }
+      else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
